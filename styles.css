@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+    color: #00FF00;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    counter-reset: list-item; /* Inicia el contador para la lista */
+}
+
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('https://fonts.cdnfonts.com/s/7346/Press_Start_2P-Regular.woff') format('woff');
+}
+
+.container {
+    text-align: center;
+    border: 3px solid #00FF00;
+    padding: 40px 60px; /* Aumenta el espacio dentro del marco */
+    max-width: 600px;
+    width: 100%;
+    background: #000;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #FF0000;
+    color: #FFD700;
+}
+
+ol {
+    list-style: none; /* Desactiva los números automáticos del navegador */
+    padding: 0;
+}
+
+li {
+    font-size: 1.5em;
+    margin: 10px 0;
+    position: relative;
+    counter-increment: list-item; /* Incrementa el contador para cada elemento de la lista */
+}
+
+li::before {
+    content: counter(list-item) "."; /* Muestra el número de la lista seguido de un punto */
+    position: absolute;
+    left: -50px; /* Ajusta esta distancia según el tamaño del marco */
+    color: #FFD700;
+}
+
+a {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF0000;
+    text-shadow: 1px 1px #00FF00;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #FFD700;
+}
