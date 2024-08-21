@@ -3,37 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instrucciones para Entrar en la Lista</title>
+    <title>Instructions for joining the list</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Instrucciones para Entrar en la Lista</h1>
+            <h1>Instructions for joining the list</h1>
         </header>
         <main>
-            <p>Para aparecer en nuestro Top 10 de sitios, sigue los pasos a continuación:</p>
+            <p>To appear in our Top 10 sites, follow the steps below:</p>
             <ol>
-                <li>Envía un correo electrónico con tu propuesta de sitio.</li>
-                <li>Incluye una breve descripción del sitio y por qué debería estar en el Top 10.</li>
-                <li>Haz un pago utilizando el botón de PayPal a continuación.</li>
-                <li>Nos pondremos en contacto contigo una vez que tu propuesta sea revisada.</li>
+                <li>Please email your site proposal to info@top10worldwebsites.com.</li>
+                <li>Include a brief description of the site and why it should be in the Top 10.</li>
+                <li>Make a payment using the PayPal button below. Set up shop, DO NOT PAY</li>
+                <li>We will contact you within 24 hours after we review your proposal.</li>
             </ol>
         </main>
-
-        <!-- Botón de PayPal -->
-        <div class="paypal-button">
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="XXXXXXXXXXXX">
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-            </form>
-        </div>
-
+	<script src="https://www.paypal.com/sdk/js?client-id=BAAvp4XJM7GoZ95Jop3Jf3oQsszOV0duOD240YnMm9KBmNwO2ttsvhgfHREhgvZx3WEoPY1dc-dh__gTak&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+	<div id="paypal-container-GE4Y5K2JMGTGC"></div>
+	<script>
+  	paypal.HostedButtons({
+    	hostedButtonId: "GE4Y5K2JMGTGC",
+  	}).render("#paypal-container-GE4Y5K2JMGTGC")
+	</script>
         <footer>
             <p>&copy; 2024 Top 10 World WebSites</p>
-            <p><a href="index.html">Volver al Top 10</a></p> <!-- Enlace para volver a la página principal -->
+            <p><a href="index.html">Back to Top 10</a></p> <!-- Enlace para volver a la página principal -->
         </footer>
     </div>
 </body>
