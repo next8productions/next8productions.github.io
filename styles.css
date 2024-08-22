@@ -4,7 +4,7 @@ body {
     font-family: 'Press Start 2P', cursive;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Cambiado de center a flex-start */
     height: 100vh;
     margin: 0;
     counter-reset: list-item; /* Inicia el contador para la lista */
@@ -26,6 +26,13 @@ body {
     max-width: 600px;
     width: 100%;
     background: #000;
+}
+
+.email-wrapper {
+    word-wrap: break-word; /* Permite que el correo electrónico se divida si es demasiado largo */
+    overflow-wrap: break-word; /* Compatible con más navegadores */
+    display: inline-block; /* Asegura que se ajuste al contenido */
+    max-width: 100%; /* Limita el ancho máximo al tamaño del contenedor */
 }
 
 h1 {
