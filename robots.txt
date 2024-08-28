@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://top10worldwebsites.com/sitemap.xml
